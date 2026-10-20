@@ -61,24 +61,59 @@ class StudentProfilePage extends StatelessWidget {
 
                 // Student details.
                 const Card(
+                  color: Colors.white,
                   child: Column(
                     children: [
                       ListTile(
                         leading: Icon(Icons.badge, color: Colors.black87),
-                        subtitle: Text('553648'),
-                        title: Text('Student Number'),
+                        subtitle: Text(
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.right,
+                          '553648',
+                        ),
+                        title: Text(
+                          style: TextStyle(fontSize: 14, color: Colors.grey),
+                          'Student Number',
+                        ),
                       ),
                       Divider(height: 1),
                       ListTile(
                         leading: Icon(Icons.school, color: Colors.black87),
-                        title: Text('Year Level and Section'),
-                        subtitle: Text('3rd Year - CCE106'),
+                        title: Text(
+                          style: TextStyle(fontSize: 14, color: Colors.grey),
+                          'Year Level / Program',
+                        ),
+                        subtitle: Text(
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.right,
+                          '3rd Year / BSIT',
+                        ),
+                      ),
+                      Divider(height: 1),
+                      ListTile(
+                        leading: Icon(Icons.phone, color: Colors.black87),
+                        title: Text(
+                          style: TextStyle(fontSize: 14, color: Colors.grey),
+                          'Contact Number',
+                        ),
+                        subtitle: Text(
+                          style: TextStyle(fontSize: 18),
+                          textAlign: TextAlign.right,
+                          '0946 711 7603',
+                        ),
                       ),
                       Divider(height: 1),
                       ListTile(
                         leading: Icon(Icons.email, color: Colors.black87),
-                        title: Text('Email Address'),
-                        subtitle: Text('k.campos.553648@umindanao.edu.ph'),
+                        title: Text(
+                          style: TextStyle(fontSize: 14, color: Colors.grey),
+                          'Email Address',
+                        ),
+                        subtitle: Text(
+                          style: TextStyle(fontSize: 16),
+                          'k.campos.553648@umindanao.edu.ph',
+                          textAlign: TextAlign.right,
+                        ),
                       ),
                     ],
                   ),
@@ -97,7 +132,7 @@ class StudentProfilePage extends StatelessWidget {
                 const Text(
                   'I am an IT student who enjoys learning '
                   'about technology and creating applications. '
-                  'My goal is to become a mobile developer.',
+                  'My goal for this subject is to learn about mobile development.',
                   style: TextStyle(fontSize: 16, height: 1.5),
                 ),
 
